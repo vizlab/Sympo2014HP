@@ -1,0 +1,26 @@
+{
+  "name": "Sympo2014HP",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://likr@github.com/vizlab/Sympo2014HP.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/vizlab/Sympo2014HP/issues"
+  },
+  "homepage": "https://github.com/vizlab/Sympo2014HP",
+  "devDependencies": {
+    "grunt-cli": "~0.1.13",
+    "typescript": "~1.0.0",
+    "grunt": "~0.4.4",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-typescript": "~0.3.4"
+  }
+}

@@ -62,7 +62,7 @@ function sympo($){
 					// $headerNav.removeClass('fixed_header_navBox');
 				// }
 			// });
-		// }
+		// }
 		// くっついてくるホームボタン
 		var $goTopBtn = $("#goTopBtn");
 		$goTopBtn.hide();
@@ -98,7 +98,7 @@ function sympo($){
         var $replyBtns = $(".replyBtn");
         $replyBtns.bind("click",function(){
         	var $replyBtn = $(this);
-        	var $form = $replyBtn.next('form');
+        	var $form = $replyBtn.next('form');
         	debugContainer = [$form.is(":hidden")];
         	if($form.is(":hidden")){
 	        	$form.show();
