@@ -27,10 +27,9 @@
   <div id="right_contentWrapper">
     <div class="content">
       <h1 id="t0" class="contentTitle">お知らせ</h1>
-      <p><strong><a href="#/class-archive#t0">研究の世界入門講座</a> 第4回、第5回は1共23(212)に教室が変更になります。(2014.5.29)</strong></p>
-      <p><strong>5月14日から<a href="#/class-archive#t0">研究の世界入門講座</a>が開催されます。(2014.5.7)</strong></p>
-      <p><strong>シンポジウムへの参加登録を<a href="https://docs.google.com/forms/d/1qRTIC1pq8cnQMJehWN_mhMg8r3QoZYjM8lrlTPI05Ys/viewform">こちら</a>から受け付けています。(2014.5.7)</strong></p>
-      <p><strong>シンポ2014HPがリリースしました。(2014.3.11)</strong></p>
+      <p ng-repeat="info in informations | limitTo:3">
+        <strong><span ng-bind-html="info.content"></span>({{info.date | date:'yyyy.M.d'}})</strong>
+      </p>
       <p><strong><a ui-sref="info"><u>お知らせ一覧を見る＞＞</u></a></strong></p>
       <div id="facebookContainer">
         <iframe id="left_facebooks" src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2F%E7%AC%AC%EF%BC%93%E5%9B%9E%E4%BA%AC%E9%83%BD%E5%A4%A7%E5%AD%A6%E5%85%A8%E5%AD%A6%E5%85%B1%E9%80%9A%E6%95%99%E8%82%B2%E5%9B%BD%E9%9A%9B%E5%AD%A6%E7%94%9F%E3%82%B7%E3%83%B3%E3%83%9D%E3%82%B8%E3%82%A6%E3%83%A0%2F167700333298938&amp;width=292&amp;height=427&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=true&amp;header=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:680px; height:430px;" allowTransparency="true"></iframe>

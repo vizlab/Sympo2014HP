@@ -36,10 +36,36 @@ var sympo2014;
 
             $urlRouteProvider.otherwise('/home');
         }]).run([
-        '$rootScope', '$location', '$anchorScroll', function ($rootScope, $location, $anchorScroll) {
+        '$rootScope', '$location', '$anchorScroll', '$sce', function ($rootScope, $location, $anchorScroll, $sce) {
             $rootScope.scrollTo = function (id) {
                 $location.hash(id);
                 $anchorScroll();
             };
+
+            $rootScope.informations = [
+                {
+                    content: 'シンポジウムの開催日が11月21日に決定しました。',
+                    date: new Date(2014, 5, 9)
+                },
+                {
+                    content: '<a href="#/class-archive#t0">研究の世界入門講座</a> 第4回、第5回は1共23(212)に教室が変更になります。',
+                    date: new Date(2014, 4, 29)
+                },
+                {
+                    content: 'シンポジウムへの参加登録を<a href="https://docs.google.com/forms/d/1qRTIC1pq8cnQMJehWN_mhMg8r3QoZYjM8lrlTPI05Ys/viewform">こちら</a>から受け付けています。',
+                    date: new Date(2014, 4, 7)
+                },
+                {
+                    content: '5月14日から<a href="#/class-archive#t0">研究の世界入門講座</a>が開催されます。',
+                    date: new Date(2014, 4, 7)
+                },
+                {
+                    content: 'シンポ2014HPがリリースしました。',
+                    date: new Date(2014, 2, 11)
+                }
+            ];
+            $rootScope.informations.forEach(function (info) {
+                info.content = $sce.trustAsHtml(info.content);
+            });
         }]);
 })(sympo2014 || (sympo2014 = {}));
