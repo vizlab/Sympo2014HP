@@ -9,6 +9,7 @@ interface Information {
 interface RootScope extends ng.IRootScopeService {
   scrollTo: (id : string) => void;
   informations: Information[];
+  formUrl: string;
 }
 
 export var app = angular
@@ -65,7 +66,21 @@ export var app = angular
       $anchorScroll();
     };
 
+    $rootScope.formUrl = 'https://docs.google.com/forms/d/1qRTIC1pq8cnQMJehWN_mhMg8r3QoZYjM8lrlTPI05Ys/viewform';
+
     $rootScope.informations = [
+      {
+        content: '英語論文執筆に関する夏期集中講義は9月8日〜12日の2限〜4限に開講されます。',
+        date: new Date(2014, 5, 23)
+      },
+      {
+        content: '研究の世界入門講座のアーカイブが<a href="#/class-archive">こちら</a>からご覧いただけます。',
+        date: new Date(2014, 5, 23)
+      },
+      {
+        content: 'シンポジウムへの参加登録を<a href="' + $rootScope.formUrl + '">こちら</a>から受け付けています。',
+        date: new Date(2014, 4, 7)
+      },
       {
         content: 'シンポジウムの開催日が11月21日に決定しました。',
         date: new Date(2014, 5, 9)
@@ -73,10 +88,6 @@ export var app = angular
       {
         content: '<a href="#/class-archive#t0">研究の世界入門講座</a> 第4回、第5回は1共23(212)に教室が変更になります。',
         date: new Date(2014, 4, 29)
-      },
-      {
-        content: 'シンポジウムへの参加登録を<a href="https://docs.google.com/forms/d/1qRTIC1pq8cnQMJehWN_mhMg8r3QoZYjM8lrlTPI05Ys/viewform">こちら</a>から受け付けています。',
-        date: new Date(2014, 4, 7)
       },
       {
         content: '5月14日から<a href="#/class-archive#t0">研究の世界入門講座</a>が開催されます。',

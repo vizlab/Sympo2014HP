@@ -9,7 +9,7 @@
       <strong>将来、研究や仕事をとおして国際的な活躍がしたい</strong><br>
       そのような方、ぜひご参加ください。<br>
     </p>
-    <p>参加登録は<a href="https://docs.google.com/forms/d/1qRTIC1pq8cnQMJehWN_mhMg8r3QoZYjM8lrlTPI05Ys/viewform">こちら</a>から</p>
+    <p>参加登録は<a href="{{formUrl}}">こちら</a>から</p>
   </div>
 </div>
 
@@ -17,35 +17,49 @@
   <div id="left_sidebar">
     <div id="left_nav">
       <ul>
-        <li><a ng-click="scrollTo('t0')">お知らせ</a></li>
-        <li><a ng-click="scrollTo('t1')">開催の背景</a></li>
-        <li><a ng-click="scrollTo('t2')">主催</a></li>
+        <li><a ng-click="scrollTo('information')">お知らせ</a></li>
+        <li><a ng-click="scrollTo('important-date')">重要日程</a></li>
+        <li><a ng-click="scrollTo('background')">開催の背景</a></li>
+        <li><a ng-click="scrollTo('sponsor')">主催</a></li>
       </ul>
     </div>
   </div>
 
   <div id="right_contentWrapper">
     <div class="content">
-      <h1 id="t0" class="contentTitle">お知らせ</h1>
+      <h1 id="information" class="contentTitle">お知らせ</h1>
       <p ng-repeat="info in informations | limitTo:3">
         <strong><span ng-bind-html="info.content"></span>({{info.date | date:'yyyy.M.d'}})</strong>
       </p>
       <p><strong><a ui-sref="info"><u>お知らせ一覧を見る＞＞</u></a></strong></p>
-      <div id="facebookContainer">
-        <iframe id="left_facebooks" src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2F%E7%AC%AC%EF%BC%93%E5%9B%9E%E4%BA%AC%E9%83%BD%E5%A4%A7%E5%AD%A6%E5%85%A8%E5%AD%A6%E5%85%B1%E9%80%9A%E6%95%99%E8%82%B2%E5%9B%BD%E9%9A%9B%E5%AD%A6%E7%94%9F%E3%82%B7%E3%83%B3%E3%83%9D%E3%82%B8%E3%82%A6%E3%83%A0%2F167700333298938&amp;width=292&amp;height=427&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=true&amp;header=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:680px; height:430px;" allowTransparency="true"></iframe>
-      </div>
     </div>
 
     <div class="content">
-      <h1 id="t1" class="contentTitle">開催の背景</h1>
+      <h1 id="important-date" class="contentTitle">重要日程</h1>
+      <ul>
+        <li>参加申し込み： 2014年7月末頃</li>
+        <li>投稿締め切り： 2014年9月末頃</li>
+        <li>査読結果通知： 2014年10月初旬</li>
+        <li>シンポジウム開催日： 11月21日(金)</li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h1 id="background" class="contentTitle">開催の背景</h1>
       <p>京都大学では、2010年度より<strong>初年次（1，2回生）教育プログラム</strong>が試行されました。その背景には、近年の高等教育機関をめぐる環境の変化があります。</p>
       <p>近年、教育のユニバーサル化が進み、高等教育機関に進学する学生の量は増えた反面、彼らの学力の質が保証されているとは言えず、大学教育の充実が急務となっています。 アメリカで導入された初年次教育ですが、日本の大学でもすでに効果を上げた例が多く報告され、本学でもよりよいプログラムが検討されています。</p>
       <p>このシンポジウムは、初年次教育の一環として、探究心と深い教養、ひろい視野を持った学生の支援をめざして始められました。学部初年次から、主体的な知的欲求に基づいて<strong>自由なテーマ</strong>で研究し、論文執筆・口頭発表までを英語で経験することで、<strong>国際的に活躍する人材</strong>を育成することを目標としています。</p>
     </div>
 
     <div class="content">
-      <h1 id="t2" class="contentTitle">主催</h1>
+      <h1 id="sponsor" class="contentTitle">主催</h1>
       京都大学国際高等教育院・第五回全学共通教育国際学生シンポジウム実行委員会
+    </div>
+
+    <div class="content">
+      <div id="facebookContainer">
+        <iframe id="left_facebooks" src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2F%E7%AC%AC%EF%BC%93%E5%9B%9E%E4%BA%AC%E9%83%BD%E5%A4%A7%E5%AD%A6%E5%85%A8%E5%AD%A6%E5%85%B1%E9%80%9A%E6%95%99%E8%82%B2%E5%9B%BD%E9%9A%9B%E5%AD%A6%E7%94%9F%E3%82%B7%E3%83%B3%E3%83%9D%E3%82%B8%E3%82%A6%E3%83%A0%2F167700333298938&amp;width=292&amp;height=427&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=true&amp;header=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:680px; height:430px;" allowTransparency="true"></iframe>
+      </div>
     </div>
   </div>
 </div>
