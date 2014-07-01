@@ -46,6 +46,14 @@ var sympo2014;
 
             $rootScope.informations = [
                 {
+                    content: 'シンポジウムへの参加登録は8月8日(金)が締切です。早めの<a href="' + $rootScope + '">登録</a>をお願いします。',
+                    date: new Date(2014, 6, 1)
+                },
+                {
+                    content: '発表希望者向け<a href="#/class-archive">説明会</a>を7月3日(木)5限、7月11日(金)5限に吉田南1号館1共23教室で開催します。',
+                    date: new Date(2014, 6, 1)
+                },
+                {
                     content: '英語論文執筆に関する夏期集中講義は9月8日〜12日の2限〜4限に開講されます。',
                     date: new Date(2014, 5, 23)
                 },
