@@ -46,6 +46,14 @@ var sympo2014;
 
             $rootScope.informations = [
                 {
+                    content: '論文投稿締切は9月30日です。<a href="http://www.viz.media.kyoto-u.ac.jp/ojs">OJS</a>から投稿を行ってください。',
+                    date: new Date(2014, 8, 15)
+                },
+                {
+                    content: '<a href="#/class-archive">夏期集中講義</a>のアーカイブを更新しました。',
+                    date: new Date(2014, 8, 15)
+                },
+                {
                     content: 'シンポジウムへの参加登録は8月8日(金)が締切です。早めの<a href="' + $rootScope + '">登録</a>をお願いします。',
                     date: new Date(2014, 6, 1)
                 },
