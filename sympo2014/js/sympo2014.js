@@ -46,6 +46,14 @@ var sympo2014;
 
             $rootScope.informations = [
                 {
+                    content: 'ボルスタッド先生による<a href="#/class-archive">口頭発表講座</a>が10月29日から始まります。',
+                    date: new Date(2014, 9, 21)
+                },
+                {
+                    content: 'シンポジウム当日に発表者の評価を行うアルバイト(大学院生向け)を募集しています。詳細は<a href="data/院生評価者募集.pdf">募集要項</a>をご確認ください。',
+                    date: new Date(2014, 9, 21)
+                },
+                {
                     content: '論文投稿締切は9月30日です。<a href="http://www.viz.media.kyoto-u.ac.jp/ojs">OJS</a>から投稿を行ってください。',
                     date: new Date(2014, 8, 15)
                 },
