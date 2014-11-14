@@ -74,7 +74,7 @@ export var app = angular
         date: new Date(2014, 9, 21),
       },
       {
-        content: 'シンポジウム当日に発表者の評価を行うアルバイト(大学院生向け)を募集しています。詳細は<a href="data/院生評価者募集.pdf">募集要項</a>をご確認ください。',
+        content: '<a href="data/院生評価者募集.pdf">シンポジウム当日に発表者の評価を行うアルバイト(大学院生向け)を募集しています。</a>',
         date: new Date(2014, 9, 21),
       },
       {
